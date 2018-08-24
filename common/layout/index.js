@@ -1,9 +1,10 @@
-const html = require('choo/html')
+const html = require('choo/html');
 
-const footer = require('../components/footer')
-const navbar = require('../components/navbar')
+const footer = require('../components/footer');
 
-const layout = component => (state, emitter) => html`
+const navbar = require('../components/navbar');
+
+const layout = (component) => (state, emitter) => html`
   <body>
     <header>
       ${navbar(state, emitter)}
@@ -13,6 +14,6 @@ const layout = component => (state, emitter) => html`
     </main>
     ${footer(state, emitter)}
   </body>
-`
+`;
 
-module.exports = layout
+module.exports = layout;
