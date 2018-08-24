@@ -1,7 +1,6 @@
 const html = require('choo/html');
 
 const footer = require('../components/footer');
-
 const navbar = require('../components/navbar');
 
 const layout = (component) => (state, emitter) => html`
